@@ -1,0 +1,28 @@
+<h2 class="list-products-h2">List of products</h2>
+
+<div class="list-products-container" id="listProductsContainer">
+    <div class="list-products-header">
+        <div class="list-products-header-id">Id</div>
+        <div class="list-products-header-title">Title</div>
+        <div class="list-products-header-description">Description</div>
+        <div class="list-products-header-code">Code</div>
+        <div class="list-products-header-price">Price</div>
+        <div class="list-products-header-status">Status</div>
+        <div class="list-products-header-stock">Stock</div>
+        <div class="list-products-header-category">Category</div>
+        <div class="list-products-header-thumbnail">Thumbnail</div>
+    </div>
+    {{#each list_products}}
+        <div class="list-products">
+            <div class="list-products-id">{{id}}</div>
+            <div class="list-products-title">{{title}}</div>
+            <div class="list-products-description">{{description}}</div>
+            <div class="list-products-code">{{code}}</div>
+            <div class="list-products-price">{{price}}</div>
+            <div class="list-products-status">{{status}}</div>
+            <div class="list-products-stock">{{stock}}</div>
+            <div class="list-products-category">{{category}}</div>
+            <div class="list-products-thumbnail">{{thumbnail}}</div>
+        </div>
+    {{/each}}
+</div>

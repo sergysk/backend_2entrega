@@ -1,0 +1,72 @@
+<form action="" class="form-container" id="productForm">
+    <h2>Create a new product</h2>
+    <div class="form-container-buttoms">
+        <div class="form-container--item">
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="productName" class="form-container--item-text">Producto:</label>
+                    <input type="text" id="productName" name="productName"  required>
+                </div>
+            </div>
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="descriptionProduct" class="form-container--item-text">Description:</label>
+                    <input type="text" id="descriptionProduct" name="descriptionProduct"  required>
+                </div>
+            </div>
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="codeProduct" class="form-container--item-text">Code:</label>
+                    <input type="text" id="codeProduct" name="codeProduct"  required>
+                </div>
+            </div>
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="priceProduct" class="form-container--item-text">Price:</label>
+                    <input type="number" id="priceProduct" name="priceProduct"  required>
+                </div>
+            </div>
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="statusProduct" class="form-container--item-text">Status:</label>
+                    <select name="status" id="statusProduct">
+                        <option value="true">Available</option>
+                        <option value="false">Unavailable</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="stockProduct" class="form-container--item-text">Stock:</label>
+                    <input type="number" id="stockProduct" name="stockProduct"  required>
+                </div>
+            </div>
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="categoryProduct" class="form-container--item-text">Category:</label>
+                    <select name="category" id="categoryProduct">
+                        <option value="ps3">PS 3</option>
+                        <option value="nintendo">Nintendo</option>
+                        <option value="arcade">Arcade</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-container--item-param">
+                <div class="form-container--item-param-set">
+                    <label for="thumbnailProduct" class="form-container--item-text">Thumbnail:</label>
+                    <input type="text" id="thumbnailProduct" name="thumbnailProduct"  required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" id="addProduct">Add product</button>
+</form>

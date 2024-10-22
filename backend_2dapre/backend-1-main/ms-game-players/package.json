@@ -1,0 +1,40 @@
+{
+  "name": "ms-game-players",
+  "version": "1.0.0",
+  "description": "api for products and carts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/skull/full-stack-course.git"
+  },
+  "keywords": [
+    "game",
+    "players",
+    "games",
+    "player"
+  ],
+  "author": "Harold Flores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/skull/full-stack-course/issues"
+  },
+  "homepage": "https://gitlab.com/skull/full-stack-course#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-handlebars": "^8.0.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^10.0.0",
+    "winston": "^3.15.0"
+  }
+}

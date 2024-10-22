@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --products-id-width: 300px;
+    --products-title-width: 200px;
+    --products-description-width: 250px;
+    --products-code-width: 200px;
+    --products-price-width: 100px;
+    --products-status-width: 100px;
+    --products-stock-width: 100px;
+    --products-category-width: 100px;
+    --products-thumbnail-width: 300px;
+
+    --products-text-align: center;
+
+    --color-hover: #f39c12;
+    --color-text-header-footer: white;
+}
+
+header {
+    background-color: #1a5276;
+    color: var(--color-text-header-footer);
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--color-hover);
+    }
+    nav {
+        display: flex;
+
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .main-products-actions {
+        display: flex;
+        gap: 100px;
+        text-align: center;
+        h2{
+            margin-bottom: 10px;
+        }
+        #productForm {
+            
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .form-container-buttoms {
+                display: flex;
+                .form-container--item {
+                    display: flex;
+                    gap: 5px;
+                    flex-direction: column;
+    
+                    .form-container--item-param {
+                        .form-container--item-param-set {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            input, select {
+                                width: 250px;
+                                height: 25px;
+                                margin-left: 2px;
+                            }
+                            input[type="text"], textarea, input[type="number"], select {
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            button {
+                margin-top: 10px;
+                width: 150px;
+            }
+        }
+
+        #productDeleteForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 350px;
+                height: 25px;
+            }
+            input[type="text"], textarea {
+                padding-left: 5px;
+            }
+            button {
+                margin-top: 10px;
+                width: 150px;
+            }
+        }
+    }
+
+    .list-products-h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .list-products-container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list-products-header {
+        display: flex;
+        text-align: var(--products-text-align);
+    
+    }
+    .list-products-header-id {
+        width: var(--products-id-width);
+        border: 1px solid;
+    }
+    .list-products-header-title {
+        width: var(--products-title-width);
+        border: 1px solid;
+    }
+    .list-products-header-description {
+        width: var(--products-description-width);
+        border: 1px solid;
+    }
+    .list-products-header-code {
+        width: var(--products-code-width);
+        border: 1px solid;
+    }
+    .list-products-header-price {
+        width: var(--products-price-width);
+        border: 1px solid;
+    }
+    .list-products-header-status {
+        width: var(--products-status-width);
+        border: 1px solid;
+    }
+    .list-products-header-stock {
+        width: var(--products-stock-width);
+        border: 1px solid;
+    }
+    .list-products-header-category {
+        width: var(--products-category-width);
+        border: 1px solid;
+    }
+    .list-products-header-thumbnail {
+        width: var(--products-thumbnail-width);
+        border: 1px solid;
+    }
+    
+    
+    .list-products {
+        width: auto;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-around;
+        text-align: var(--products-text-align);
+    }
+    .list-products-id {
+        width: var(--products-id-width);
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-title {
+        width: var(--products-title-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-description {
+        width: var(--products-description-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-code {
+        width: var(--products-code-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-price {
+        width: var(--products-price-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-status {
+        width: var(--products-status-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-stock {
+        width: var(--products-stock-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-category {
+        width: var(--products-category-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .list-products-thumbnail {
+        width: var(--products-thumbnail-width);
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+}
+
+
+
+footer {
+    color: var(--color-text-header-footer);
+    height: 150px;
+    background-color: #17202a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
